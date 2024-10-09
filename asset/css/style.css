@@ -1,0 +1,70 @@
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body body {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.6;
+}
+body header, body footer {
+  background-color: #153131;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+body nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+body .nav-links a {
+  text-decoration: none;
+  color: #6a7fdb;
+  font-size: 1.2rem;
+}
+body .menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+body .menu-toggle span {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+}
+body main {
+  padding: 20px;
+  text-align: center;
+}
+body h1, body h2 {
+  color: #6a7fdb;
+  margin-bottom: 20px;
+}
+body p {
+  margin-bottom: 20px;
+}
+body footer p {
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  body .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body .menu-toggle {
+    display: flex;
+  }
+  body .menu-toggle.active + .nav-links {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
